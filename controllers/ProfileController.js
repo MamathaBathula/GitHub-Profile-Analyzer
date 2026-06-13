@@ -1,5 +1,5 @@
 const axios = require("axios");
-const profileModel = require("../models/profileModel");
+const profileModel = require("../models/ProfileModel");
 
 const analyzeProfile = async (req, res) => {
     try {

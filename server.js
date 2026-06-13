@@ -1,4 +1,3 @@
-
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -16,10 +15,10 @@ app.get("/", (req, res) => {
     res.send("GitHub Profile Analyzer API is Running");
 });
 
-app.use("/api", ProfileRoutes);
+app.use("/api", profileRoutes);
 
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-}); 
+    console.log(`Server is running on port ${PORT}`);
+});
