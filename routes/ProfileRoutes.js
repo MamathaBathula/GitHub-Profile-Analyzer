@@ -8,7 +8,7 @@ const {
     getProfileByUsername,
     updateProfile,
     deleteProfile
-} = require("../controllers/profileController");
+} = require("../controllers/ProfileController");
 
 router.post("/analyze", analyzeProfile);
 
